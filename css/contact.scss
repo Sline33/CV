@@ -1,0 +1,127 @@
+// Pacifico
+@font-face{
+    font-family: 'Pacifico';
+    src: url(../fonts/Pacifico-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+// Spectral
+@font-face{
+    font-family: 'Spectral';
+    src: url(../fonts/Spectral-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+// Header Accueil
+.accueil{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.445),rgba(0, 0, 0, 0.747)), url('../img/back-contact.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    height: 430px;
+    .top-ligne{
+
+        padding: 25px;
+        a{
+            padding: 10px;
+            font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+            color: White;
+            font-size: 30px;
+        }
+        a:hover{
+            text-decoration: none;
+            .arrow-l{
+                color: #06bb84;
+            }
+
+        }
+    }
+    .center-ligne{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+            color: #06bb84;
+            text-shadow: 2px 2px white;
+            font-size: 60px;
+        }
+    }
+}
+
+// Formulaire
+.formulaire{
+    padding-bottom: 20px;
+    .welcome-text{
+        font-size: 20px;
+        padding: 20px;
+        color: #303030;
+    }
+    .errors{
+        color: rgb(158, 3, 3);
+    }
+    .success{
+        color: rgb(3, 158, 3);
+        background-color: #b7ffaf;
+        border-color: #92cb86;
+    }
+    .photo{
+        display: flex;
+        justify-content: center;
+        img {
+            height: 170px;
+            border-radius: 50px;
+            margin-bottom: 15px;
+        }
+    } 
+    .info-perso{
+        ul{
+            list-style-type: none;
+            li{
+                font-size: 20px;
+                a{
+                    color: #06bb84;
+                }
+            }
+        }
+        ul li:before {
+            content: "\2022";
+            margin-right: 10px;
+            color: #06bb84;
+        }
+    } 
+}
+
+// Footer
+footer{
+    background: #06bb84;
+    .text-footer{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 10px;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .formulaire{
+        .captcha{
+            margin-bottom: 10px;
+        }
+        .info-perso{
+            ul{
+                li{
+                    font-size: 15px;
+                }
+            } 
+        }
+    }
+}

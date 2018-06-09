@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url(../fonts/Pacifico-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Spectral';
+  src: url(../fonts/Spectral-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+.accueil {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.747)), url("../img/back-contact.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 430px; }
+  .accueil .top-ligne {
+    padding: 25px; }
+    .accueil .top-ligne a {
+      padding: 10px;
+      font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+      color: White;
+      font-size: 30px; }
+    .accueil .top-ligne a:hover {
+      text-decoration: none; }
+      .accueil .top-ligne a:hover .arrow-l {
+        color: #06bb84; }
+  .accueil .center-ligne {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .accueil .center-ligne h1 {
+      font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+      color: #06bb84;
+      text-shadow: 2px 2px white;
+      font-size: 60px; }
+
+.formulaire {
+  padding-bottom: 20px; }
+  .formulaire .welcome-text {
+    font-size: 20px;
+    padding: 20px;
+    color: #303030; }
+  .formulaire .errors {
+    color: #9e0303; }
+  .formulaire .success {
+    color: #039e03;
+    background-color: #b7ffaf;
+    border-color: #92cb86; }
+  .formulaire .photo {
+    display: flex;
+    justify-content: center; }
+    .formulaire .photo img {
+      height: 170px;
+      border-radius: 50px;
+      margin-bottom: 15px; }
+  .formulaire .info-perso ul {
+    list-style-type: none; }
+    .formulaire .info-perso ul li {
+      font-size: 20px; }
+      .formulaire .info-perso ul li a {
+        color: #06bb84; }
+  .formulaire .info-perso ul li:before {
+    content: "\2022";
+    margin-right: 10px;
+    color: #06bb84; }
+
+footer {
+  background: #06bb84; }
+  footer .text-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .text-footer p {
+      font-size: 10px;
+      margin: 0; }
+
+@media (max-width: 768px) {
+  .formulaire .captcha {
+    margin-bottom: 10px; }
+  .formulaire .info-perso ul li {
+    font-size: 15px; } }
+
+/*# sourceMappingURL=contact.css.map */
